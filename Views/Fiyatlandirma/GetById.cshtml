@@ -1,0 +1,59 @@
+﻿@model List<GoraYazilim.Entity.DtoFiyatlandirma>
+
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">
+            <h2>Ürüne Ait Fİyatlandırma Listesi</h2>
+        </div>
+        <table class="table table-bordered table-striped">
+            <thead class="bg-dark text-white">
+                <tr>
+                    <td>Maliyet</td>
+                    <td>TabanFiyat</td>
+                    <td>ListeFiyat</td>
+                    <td>CozumOrtagiFiyat</td>
+                    <td>ParakendeSatisFiyat</td>
+                    <td>BayiiSatisFiyati</td>
+                    <td>FiyatBaslangicTarihi</td>
+                    <td>FiyatDegisimTarihi</td>
+                  
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (GoraYazilim.Entity.DtoFiyatlandirma item in Model)
+                {
+                    <tr>
+                        
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.Maliyet) ₺
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.TabanFiyat) ₺
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.ListeFiyat) ₺
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.CozumOrtagiFiyat) ₺
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.ParakendeSatisFiyat) ₺
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.BayiiSatisfiyati) ₺
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.FiyatBaslangicTarihi)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.FiyatDegisimTarihi)
+                        </td>                     
+
+                       
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

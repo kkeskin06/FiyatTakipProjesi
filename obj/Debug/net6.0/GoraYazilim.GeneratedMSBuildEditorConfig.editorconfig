@@ -1,0 +1,124 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GoraYazilim
+build_property.RootNamespace = GoraYazilim
+build_property.ProjectDir = C:\Users\tepec\source\repos\GoraYazilim\GoraYazilim\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\tepec\source\repos\GoraYazilim\GoraYazilim
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Alturun/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx0dXJ1blxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Alturun/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx0dXJ1blxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Alturun/GetById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx0dXJ1blxHZXRCeUlkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Alturun/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx0dXJ1blxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Fiyatlandirma/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRml5YXRsYW5kaXJtYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Fiyatlandirma/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRml5YXRsYW5kaXJtYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Fiyatlandirma/GetById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRml5YXRsYW5kaXJtYVxHZXRCeUlkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Fiyatlandirma/GetBySaticiId.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRml5YXRsYW5kaXJtYVxHZXRCeVNhdGljaUlkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Fiyatlandirma/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRml5YXRsYW5kaXJtYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Kategori/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Kategori/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Kategori/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2F0ZWdvcmlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Satici/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2F0aWNpXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Satici/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2F0aWNpXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Satici/GetById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2F0aWNpXEdldEJ5SWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Satici/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2F0aWNpXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Security/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VjdXJpdHlcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Urun/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1blxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Urun/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1blxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Urun/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXJ1blxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tepec/source/repos/GoraYazilim/GoraYazilim/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-lb0sgvunmm

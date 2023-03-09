@@ -1,0 +1,77 @@
+﻿@model GoraYazilim.Entity.DtoSatici;
+
+
+<h2>Yeni Satıcı Ekle</h2>
+<div class="card">
+
+    <div class="card-title">
+    </div>
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data" asp-controller="Satici" asp-action="Add">
+            <table>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="SaticiAdi" class="control-label"></label>
+                            <input asp-for="SaticiAdi" class="form-control" />
+                            <span asp-validation-for="SaticiAdi" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="SaticiMail" class="control-label"></label>
+                            <input asp-for="SaticiMail" class="form-control" />
+                            <span asp-validation-for="SaticiMail" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="SaticiAdres" class="control-label"></label>
+                            <input asp-for="SaticiAdres" class="form-control" />
+                            <span asp-validation-for="SaticiAdres" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="SaticiTelefon" class="control-label"></label>
+                            <input asp-for="SaticiTelefon" class="form-control" />
+                            <span asp-validation-for="SaticiTelefon" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="SaticiTuru" class="control-label"></label>
+                            <input asp-for="SaticiTuru" class="form-control" />
+                            <span asp-validation-for="SaticiTuru" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>               
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="UrunId" class="control-label"></label>
+                            <input asp-for="UrunId" class="form-control" />
+                            <span asp-validation-for="UrunId" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <tr>
+                    <td></td>
+
+                    <td><hr /><input type="submit" value="Kaydet" class="btn btn-primary" /></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</div>
+
+

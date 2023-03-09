@@ -1,0 +1,42 @@
+﻿@model List<GoraYazilim.Entity.DtoKategori>
+
+<div class="card">
+    <a class="btn btn-success" asp-controller="Kategori" asp-action="Create">Yeni Kategori Ekle</a>
+    <div class="card-body">
+        <div class="card-title">
+            <h2>Kategoriler</h2>
+        </div>
+        <table class="table table-bordered table-striped">
+            <thead class="bg-dark text-white">
+                <tr>
+                    <td>KategoriId</td>
+                    <td>KategoriAdi</td>
+                    <td>KategoriBilgisi</td>
+                    <td>İslemler</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (GoraYazilim.Entity.DtoKategori item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.KategoriId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.KategoriAdi)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.KategoriBilgisi)
+                        </td>
+                       
+
+                        <td>
+                            <a class="btn btn-primary" asp-controller="Kategori" asp-route-id="@item.KategoriId" asp-action="Edit">Düzenle</a> |  <a class="btn btn-danger" asp-controller="kategori" asp-action="Delete" asp-route-id="@item.KategoriId">Sil</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

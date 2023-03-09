@@ -1,0 +1,112 @@
+﻿@model GoraYazilim.Entity.DtoFiyatlandirma;
+
+
+<h2>Yeni Fiyatlandirma Listesi Oluştur</h2>
+<div class="card">
+
+    <div class="card-title">
+    </div>
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data" asp-controller="Fiyatlandirma" asp-action="Add">
+            <table>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="Maliyet" class="control-label"></label>
+                            <input asp-for="Maliyet" class="form-control" />
+                            <span asp-validation-for="Maliyet" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="TabanFiyat" class="control-label"></label>
+                            <input asp-for="TabanFiyat" class="form-control" />
+                            <span asp-validation-for="TabanFiyat" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="ListeFiyat" class="control-label"></label>
+                            <input asp-for="ListeFiyat" class="form-control" />
+                            <span asp-validation-for="ListeFiyat" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="CozumOrtagiFiyat" class="control-label"></label>
+                            <input asp-for="CozumOrtagiFiyat" class="form-control" />
+                            <span asp-validation-for="CozumOrtagiFiyat" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="ParakendeSatisFiyat" class="control-label"></label>
+                            <input asp-for="ParakendeSatisFiyat" class="form-control" />
+                            <span asp-validation-for="ParakendeSatisFiyat" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="BayiiSatisfiyati" class="control-label"></label>
+                            <input asp-for="BayiiSatisfiyati" class="form-control" />
+                            <span asp-validation-for="BayiiSatisfiyati" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="SaticiId" class="control-label"></label>
+                            <input asp-for="SaticiId" class="form-control" />
+                            <span asp-validation-for="SaticiId" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="FiyatBaslangicTarihi" class="control-label"></label>
+                            <input asp-for="FiyatBaslangicTarihi" class="form-control" />
+                            <span asp-validation-for="FiyatBaslangicTarihi" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="FiyatDegisimTarihi" class="control-label"></label>
+                            <input asp-for="FiyatDegisimTarihi" class="form-control" />
+                            <span asp-validation-for="FiyatDegisimTarihi" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="UrunId" class="control-label"></label>
+                            <input asp-for="UrunId" class="form-control" />
+                            <span asp-validation-for="UrunId" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <tr>
+                    <td></td>
+
+                    <td><hr /><input type="submit" value="Kaydet" class="btn btn-primary" /></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</div>
+

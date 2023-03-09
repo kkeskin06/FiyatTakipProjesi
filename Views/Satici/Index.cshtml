@@ -1,0 +1,59 @@
+﻿@model List<GoraYazilim.Entity.DtoSatici>
+
+<div class="card">
+    <a class="btn btn-success" asp-controller="Satici" asp-action="Create">Yeni Satici Ekle</a>
+    <div class="card-body">
+        <div class="card-title">
+            <h2>Satıcılar</h2>
+        </div>
+        <table class="table table-bordered table-striped">
+            <thead class="bg-dark text-white">
+                <tr>
+                    <td>SaticiId</td>
+                    <td>SaticiAdi</td>
+                    <td>SaticiMail</td>
+                    <td>SaticiAdres</td>
+                    <td>SaticiTelefon</td>
+                    <td>SaticiTuru</td>                  
+                    <td>UrunId</td>
+                    <td>İslemler</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (GoraYazilim.Entity.DtoSatici item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.SaticiId)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.SaticiAdi)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.SaticiMail)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.SaticiAdres)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.SaticiTelefon)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.SaticiTuru)
+                        </td>                        
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.UrunId)
+                        </td>
+                     
+
+
+                        <td>
+                            <a class="btn btn-default" asp-controller="Fiyatlandirma" asp-route-id="@item.SaticiId" asp-action="GetBySaticiId">Saticinin Fiyat Listesi</a> |  <a class="btn btn-primary" asp-controller="Satici" asp-route-id="@item.SaticiId" asp-action="Edit">Düzenle</a> |  <a class="btn btn-danger" asp-controller="Satici" asp-action="Delete" asp-route-id="@item.SaticiId">Sil</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

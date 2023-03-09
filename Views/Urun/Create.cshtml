@@ -1,0 +1,69 @@
+﻿@model GoraYazilim.Entity.DtoUrun;
+
+
+<h2>Yeni Ürün Oluştur</h2>
+<div class="card">
+
+    <div class="card-title">
+    </div>
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data" asp-controller="Urun" asp-action="Add">
+            <table>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="UrunAdi" class="control-label"></label>
+                            <input asp-for="UrunAdi" class="form-control" />
+                            <span asp-validation-for="UrunAdi" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="UrunMarkasi" class="control-label"></label>
+                            <input asp-for="UrunMarkasi" class="form-control" />
+                            <span asp-validation-for="UrunMarkasi" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="UrunKodu" class="control-label"></label>
+                            <input asp-for="UrunKodu" class="form-control" />
+                            <span asp-validation-for="UrunKodu" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+               @* <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="UrunFiyat" class="control-label"></label>
+                            <input asp-for="UrunFiyat" class="form-control" />
+                            <span asp-validation-for="UrunFiyat" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>*@
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="KategoriId" class="control-label"></label>
+                            <input asp-for="KategoriId" class="form-control" />
+                            <span asp-validation-for="KategoriId" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+               
+                <tr>
+                    <td></td>
+
+                    <td><hr /><input type="submit" value="Oluştur" class="btn btn-primary" /></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</div>
+
+

@@ -1,0 +1,46 @@
+﻿@model List<GoraYazilim.Entity.DtoAltUrun>
+
+<div class="card">
+    <a class="btn btn-success" asp-controller="Alturun" asp-action="Create">Yeni Alt Ürün Ekle</a>
+    <div class="card-body">
+        <div class="card-title">
+            <h2>Alt Ürün Listesi</h2>
+        </div>
+        <table class="table table-bordered table-striped">
+            <thead class="bg-dark text-white">
+                <tr>
+                   @* <td>AlturunId</td>*@
+                    <td>AlturunAdi</td>
+                    <td>AlturunFiyat</td>
+                    <td>AnaurunId</td>
+                    <td>İslemler</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (GoraYazilim.Entity.DtoAltUrun item in Model)
+                {
+                    <tr>
+                        @*<td>
+                            @Html.DisplayFor(itemdisplay => item.AlturunId) 
+                        </td>*@
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.AlturunAdi) 
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.AlturunFiyat) ₺
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.UrunId)
+                        </td>
+                        
+
+                        <td>
+                            <a class="btn btn-primary" asp-controller="Alturun" asp-route-id="@item.AlturunId" asp-action="Edit">Düzenle</a> |  <a class="btn btn-danger" asp-controller="Alturun" asp-action="Delete" asp-route-id="@item.AlturunId">Sil</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

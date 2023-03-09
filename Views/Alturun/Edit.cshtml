@@ -1,0 +1,41 @@
+﻿@model GoraYazilim.Entity.DtoAltUrun
+
+
+<h2>alt Ürün Güncelleme</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" method="post" enctype="multipart/form-data" asp-controller="Alturun" asp-action="Update">
+
+
+            <div class="form-group">
+
+                <input asp-for="AlturunId" class="form-control" type="hidden" />
+
+            </div>
+
+            <div class="form-group">
+                <label asp-for="AlturunAdi" class="control-label"></label>
+                <input asp-for="AlturunAdi" class="form-control" />
+                <span asp-validation-for="AlturunAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AlturunFiyat" class="control-label"></label>
+                <input asp-for="AlturunFiyat" class="form-control" />
+                <span asp-validation-for="AlturunFiyat" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UrunId" class="control-label"></label>
+                <input asp-for="UrunId" class="form-control" />
+                <span asp-validation-for="UrunId" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+               <hr /> <input type="submit" value="Düzenlemeyi Kaydet" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+

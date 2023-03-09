@@ -1,0 +1,74 @@
+﻿@model List<GoraYazilim.Entity.DtoFiyatlandirma>
+
+<div class="card">
+    <a class="btn btn-success" asp-controller="Fiyatlandirma" asp-action="Create">Yeni Fiyatlandırma Oluştur</a>
+    <div class="card-body">
+        <div class="card-title">
+            <h2>Fiyatlandirma</h2>
+        </div>
+        <table class="table table-bordered table-striped">
+            <thead class="bg-dark text-white">
+                <tr>
+                    
+                    <td>Maliyet</td>
+                    <td>TabanFiyat</td>
+                    <td>ListeFiyat</td>
+                    <td>CozumOrtagiFiyat</td>
+                    <td>ParakendeSatisFiyat</td>
+                    <td>BayiiSatisfiyati</td>
+                    <td>FiyatBaslangicTarihi</td>
+                    <td>FiyatDegisimTarihi</td>
+                    @*<td>SaticiId</td>*@
+                    <td>UrunId</td>
+                    <td>İslemler</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (GoraYazilim.Entity.DtoFiyatlandirma item in Model)
+                {
+                    <tr>
+                        
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.Maliyet) ₺
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.TabanFiyat) ₺
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.ListeFiyat) ₺
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.CozumOrtagiFiyat) ₺
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.ParakendeSatisFiyat) ₺
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.BayiiSatisfiyati) ₺
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.FiyatBaslangicTarihi)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.FiyatDegisimTarihi)
+                        </td>
+                        @*<td>
+                            @Html.DisplayFor(itemdisplay => item.SaticiId)
+                        </td>*@
+                        <td>
+                            @Html.DisplayFor(itemdisplay => item.UrunId)
+                        </td>
+
+
+
+
+                        <td>
+                            <a class="btn btn-primary" asp-controller="Fiyatlandirma" asp-route-id="@item.FiyatmandirmaId" asp-action="Edit">Düzenle</a> |  <a class="btn btn-danger" asp-controller="Fiyatlandirma" asp-action="Delete" asp-route-id="@item.FiyatmandirmaId">Sil </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>

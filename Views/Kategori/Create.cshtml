@@ -1,0 +1,39 @@
+﻿@model GoraYazilim.Entity.DtoKategori;
+
+
+<h2>Yeni Kategori Oluştur</h2>
+<div class="card">
+
+    <div class="card-title">
+    </div>
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data" asp-controller="kategori" asp-action="Add">
+            <table>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="KategoriAdi" class="control-label"></label>
+                            <input asp-for="KategoriAdi" class="form-control" />
+                            <span asp-validation-for="KategoriAdi" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="form-group">
+                            <label asp-for="KategoriBilgisi" class="control-label"></label>
+                            <input asp-for="KategoriBilgisi" class="form-control" />
+                            <span asp-validation-for="KategoriBilgisi" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+                <tr>
+                   
+                    <td><hr /><input type="submit" value="Oluştur" class="btn btn-primary" /></td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+</div>
+

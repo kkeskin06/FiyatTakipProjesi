@@ -1,0 +1,70 @@
+﻿@model GoraYazilim.Models.FiyatlandirmaViewModel
+
+
+
+<div class="card">
+    <div class="card-body">
+        <div class="card-title">
+            <h2>Saticiya Ait Fiyatlandırma Listesi</h2>
+        </div>
+        <table class="table table-bordered table-striped">
+            <thead class="bg-dark text-white">
+
+                <tr>
+                    <td>Maliyet</td>
+                    <td>Satış Fiyatı</td>
+                    <td>saticiId</td>
+                    <td>FiyatBaslangicTarihi</td>
+                    <td>FiyatDegisimTarihi</td>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Fiyatlandirmalar)
+                {
+                <td>
+                        @Html.DisplayFor(itemdisplay => item.Maliyet) ₺
+                </td>
+                    @foreach (var item2 in Model.Saticilar)
+                    {
+
+                        @if (item2.SaticiTuru == "Bayii" && item.SaticiId == item2.SaticiId)
+                        {
+                        <td>
+                                @Html.DisplayFor(itemdisplay => item.BayiiSatisfiyati) ₺
+                        </td>
+                        }
+                        @if (item2.SaticiTuru == "ParakendeSatici" && item.SaticiId == item2.SaticiId)
+                        {
+                        <td>
+                                @Html.DisplayFor(itemdisplay => item.ParakendeSatisFiyat) ₺
+                        </td>
+                        }
+                        @if (item2.SaticiTuru == "CozumOrtagi" && item.SaticiId == item2.SaticiId)
+                        {
+                        <td>
+                                @Html.DisplayFor(itemdisplay => item.CozumOrtagiFiyat) ₺
+                        </td>
+                        }
+
+                    }
+
+
+                <td>
+                        @Html.DisplayFor(itemdisplay => item.SaticiId)
+                </td>
+                <td>
+                        @Html.DisplayFor(itemdisplay => item.FiyatBaslangicTarihi)
+                </td>
+                <td>
+                        @Html.DisplayFor(itemdisplay => item.FiyatDegisimTarihi)
+                </td>
+
+
+                }
+
+            </tbody>
+        </table>
+    </div>
+
+</div>

@@ -1,0 +1,55 @@
+﻿@model GoraYazilim.Entity.DtoSatici
+
+
+<h2>Satıcı Bilgileri güncelleme</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" method="post" enctype="multipart/form-data" asp-controller="Satici" asp-action="Update">
+
+
+            <div class="form-group">
+
+                <input asp-for="SaticiId" class="form-control" type="hidden" />
+
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SaticiAdi" class="control-label"></label>
+                <input asp-for="SaticiAdi" class="form-control" />
+                <span asp-validation-for="SaticiAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaticiMail" class="control-label"></label>
+                <input asp-for="SaticiMail" class="form-control" />
+                <span asp-validation-for="SaticiMail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaticiAdres" class="control-label"></label>
+                <input asp-for="SaticiAdres" class="form-control" />
+                <span asp-validation-for="SaticiAdres" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaticiTelefon" class="control-label"></label>
+                <input asp-for="SaticiTelefon" class="form-control" />
+                <span asp-validation-for="SaticiTelefon" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SaticiTuru" class="control-label"></label>
+                <input asp-for="SaticiTuru" class="form-control" />
+                <span asp-validation-for="SaticiTuru" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UrunId" class="control-label"></label>
+                <input asp-for="UrunId" class="form-control" />
+                <span asp-validation-for="UrunId" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <hr /><input type="submit" value="Güncellemeyi Kaydet" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>

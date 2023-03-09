@@ -1,0 +1,50 @@
+﻿@model GoraYazilim.Entity.DtoUrun
+
+
+<h2>Seçilen Ürünü Güncelle</h2>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" method="post" enctype="multipart/form-data" asp-controller="Urun" asp-action="Update">
+
+
+            <div class="form-group">
+
+                <input asp-for="UrunId" class="form-control" type="hidden" />
+
+            </div>
+
+            <div class="form-group">
+                <label asp-for="UrunAdi" class="control-label"></label>
+                <input asp-for="UrunAdi" class="form-control" />
+                <span asp-validation-for="UrunAdi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UrunMarkasi" class="control-label"></label>
+                <input asp-for="UrunMarkasi" class="form-control" />
+                <span asp-validation-for="UrunMarkasi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UrunKodu" class="control-label"></label>
+                <input asp-for="UrunKodu" class="form-control" />
+                <span asp-validation-for="UrunKodu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                <input asp-for="UrunFiyat" class="form-control" type="hidden" />
+               
+            </div>
+            <div class="form-group">
+                <label asp-for="KategoriId" class="control-label"></label>
+                <input asp-for="KategoriId" class="form-control" />
+                <span asp-validation-for="KategoriId" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <hr /><input type="submit" value="Düzenlemeyi Kaydet" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
